@@ -1,0 +1,18 @@
+export class Point {
+    // 간격을 가진 좌표를 생성, 좌표의 Y값을 이동시키고 
+    // 각 좌표를 선으로 연결하는 것 
+    constructor(index, x, y) {
+        this.x = x;
+        this.y = y;
+        this.fixedY = y - 500;
+        this.speed = 0.005;
+        this.cur = index;
+        this.max = Math.random() * 100 + 200;
+
+    }
+    update() {
+        this.cur += this.speed;
+        this.y = this.fixedY + (Math.sin(this.cur) * this.max);
+
+    }
+}
