@@ -305,7 +305,14 @@ body {
   opacity: 0.7;
   -webkit-animation: pulse 3s linear 3s infinite;
 }
-
+.smile {
+  position: absolute;
+  left: 310px;
+  top: 50px;
+  width: 350px;
+  height: 277px;
+  border-radius: 10px solid transparent;
+}
 /* animations */
 @-webkit-keyframes pulse {
   0% {
